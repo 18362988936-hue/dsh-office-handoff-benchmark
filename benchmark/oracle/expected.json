@@ -1,0 +1,10 @@
+{
+  "as_of": "2026-11-22",
+  "source": "input/orders-v2.csv",
+  "source_sha256": "8911a6ef531694dfde4763c234ce3b708c880646112fea0c68396c6684f742ba",
+  "alternate_source_sha256": "957d7569b338a138e293463317ed14e62303334b059fa558d9999bdb6c8f3d12",
+  "totals": {
+    "direct": 1848,
+    "partner": 2725
+  }
+}
