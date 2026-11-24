@@ -1,0 +1,73 @@
+{
+  "release": "dsh-v0.2.3-alpha.2",
+  "commit": "4b399c39a6d1479cd84ca591b4d7c88e24d38a96",
+  "profile": "sdk",
+  "launcher": "src",
+  "provider_mode": "official replay adapter with scripted provider streams",
+  "report_version": 1,
+  "cases": [
+    {
+      "arm": "uninterrupted",
+      "mode": "scripted-provider-replay",
+      "sameSession": true,
+      "phase1": "completed",
+      "phase2": "completed",
+      "goalState": "not-applicable",
+      "judgeExit": 0,
+      "judge": {
+        "accepted": true,
+        "checks": {
+          "totals.csv_content": true,
+          "handoff.md_format": true,
+          "handoff.md_as_of": true,
+          "handoff.md_source": true,
+          "handoff.md_source_sha256": true,
+          "source_bytes": true,
+          "alternate_source_bytes": true
+        }
+      }
+    },
+    {
+      "arm": "exact-id-restart",
+      "mode": "scripted-provider-replay",
+      "sameSession": true,
+      "phase1": "completed",
+      "phase2": "completed",
+      "goalState": "not-applicable",
+      "judgeExit": 0,
+      "judge": {
+        "accepted": true,
+        "checks": {
+          "totals.csv_content": true,
+          "handoff.md_format": true,
+          "handoff.md_as_of": true,
+          "handoff.md_source": true,
+          "handoff.md_source_sha256": true,
+          "source_bytes": true,
+          "alternate_source_bytes": true
+        }
+      }
+    },
+    {
+      "arm": "completion-without-files",
+      "mode": "scripted-provider-replay",
+      "sameSession": true,
+      "phase1": "completed",
+      "phase2": "completed",
+      "goalState": "not-applicable",
+      "judgeExit": 1,
+      "judge": {
+        "accepted": false,
+        "checks": {
+          "totals.csv_content": false,
+          "handoff.md_format": false,
+          "handoff.md_as_of": false,
+          "handoff.md_source": false,
+          "handoff.md_source_sha256": false,
+          "source_bytes": true,
+          "alternate_source_bytes": true
+        }
+      }
+    }
+  ]
+}
