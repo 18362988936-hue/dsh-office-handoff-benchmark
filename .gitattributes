@@ -1,0 +1,5 @@
+# Byte-level fixture digests and directly executable runner shebangs require LF.
+benchmark/input/*.csv text eol=lf
+benchmark/*.sh text eol=lf
+# The replay drivers read the user prompts from this file.
+benchmark/PROTOCOL.md text eol=lf
